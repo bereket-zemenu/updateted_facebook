@@ -19,7 +19,7 @@ jobs:
     
     - run: flutter build apk --release
         
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: Facebook lite
         path: build/app/outputs/flutter-apk/Facebook-lite.apk
