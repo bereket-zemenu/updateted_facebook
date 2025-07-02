@@ -1,0 +1,30 @@
+name: fb
+description: "A new Flutter project."
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  googleapis: ^13.1.0       # For Google Sheets API
+  googleapis_auth: ^1.4.1   # For authentication
+  http: ^1.4.0            # For HTTP requests
+  flutter_dotenv: ^5.1.0   # Optional: For environment variables
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Add your assets (service account JSON file)
+  assets:
+    - assets/auth/service-account.json
+    - assets/images/facebook_logo.png
